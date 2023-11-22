@@ -1,39 +1,43 @@
 ###
 
-GET http://localhost:3000/api/users
+GET http://localhost:3000/api/productos
 
 ###
-POST http://localhost:3000/api/users
+POST http://localhost:3000/api/productos
 Content-Type: application/json
 
 {
-    "nombre": "Alejandro",
-    "edad": 88
+    "nombre": "Jersey cuello vuelto negro - ZARA",
+    "precio": 18.99,
+    "descripcion": "Jersey de lana básico en color negro."
 }
 
 ###
 
-GET http://localhost:3000/api/users/4
+GET http://localhost:3000/api/productos/4
 
 ###
 
-POST http://localhost:3000/api/users HTTP/1.1
+POST http://localhost:3000/api/productos HTTP/1.1
 Content-Type: application/json
 
-{ 
-    "nombre": "Hernando", 
-    "edad": 19 
+{
+    "nombre": "Deportivas blancas con plataforma - ZARA",
+    "precio": 39.95,
+    "descripcion": "Zapatillas de deporte color blanco con plataforma de 2 cm."
 }
 
 ###
 
-PUT http://localhost:3000/api/users/7 HTTP/1.1
+PUT http://localhost:3000/api/productos/1 HTTP/1.1
 Content-Type: application/json
 
-{ 
-    "nombre": "Alberto", 
-    "edad": 99 
-}
+  {
+    "id": 1,
+    "nombre": "VESTIDO LARGO SOFT RIB - ZARA",
+    "precio": 24.95,
+    "descripcion": "Vestido largo de escote pico y manga larga"
+  }
 
 ###
-DELETE http://localhost:3000/api/users/4
+DELETE http://localhost:3000/api/productos/5
